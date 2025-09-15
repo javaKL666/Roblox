@@ -179,8 +179,9 @@ task.wait(2)
 setupTranslationEngine()
 
 local success, err = pcall(function()
---这下面填加载外部脚本
-loadstring(game:HttpGet("https://rawscripts.net/raw/DOORS-Prohax-v3-47773"))()
+--这下面填外部脚本链接
+getgenv().LibraryIs = "Obsidian" -- or Linoria
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHunterSolo1/Op-Ninja-Simulator-/Main/Lua"))()
 
 
 end)
